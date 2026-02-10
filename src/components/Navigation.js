@@ -1,6 +1,6 @@
 import Navbar from 'react-bootstrap/Navbar';
 
-import logo from '../logo.png';
+import logo from '../logo3.png';
 
 const Navigation = () => {
     return(      
@@ -12,7 +12,9 @@ const Navigation = () => {
                 height="40"
                 className="d-inline-block align-top mx-3" 
             />
-            <Navbar.Brand href="#">DApp ICO Crowdsale</Navbar.Brand>
+            <Navbar.Brand href="#" style={{ color: '#ffffff' }}>
+                Quip Crowdsale
+            </Navbar.Brand>
         </Navbar>             
     )
 }

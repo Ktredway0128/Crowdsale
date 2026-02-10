@@ -1,13 +1,13 @@
-# Sample Hardhat Project
+Local Development Requirements
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+To run this project locally, you’ll need Hardhat and MetaMask set up correctly.
 
-Try running some of the following tasks:
+First, make sure Hardhat is installed on your machine and that all project dependencies are installed.
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+Next, start a local Hardhat blockchain by running the Hardhat node. This will create local test accounts and simulate an Ethereum network.
+
+In MetaMask, add the Hardhat local network and import one of the generated Hardhat accounts using its private key. This account will be used to deploy contracts and interact with the dApp.
+
+After the node is running, deploy the smart contracts by running the project’s deployment script. This will deploy the token and crowdsale contracts to the local Hardhat network.
+
+Once deployed, start the frontend and connect MetaMask to the Hardhat network. The application will only function correctly if MetaMask is connected to the same local network where the contracts were deployed.

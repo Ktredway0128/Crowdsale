@@ -40,7 +40,16 @@ const Buy = ({ provider, price, crowdsale, setIsLoading }) => {
                     {isWaiting ? (
                         <Spinner animation="border"/>
                     ): (  
-                        <Button variant="primary" type="Submit" style={{ width: '100%' }}>
+                        <Button 
+                        variant="primary" 
+                        type="submit" 
+                        style={{ 
+                            width: '100%', 
+                            backgroundColor: '#FFA500',  // bright orange
+                            borderColor: '#FFA500',      // match border
+                            color: '#ffffff'             // white text
+                        }}
+                        >
                         Buy Tokens    
                         </Button>
                     )}               
